@@ -5,3 +5,20 @@ h2 {
 p {
   font-size: 300%;
 }
+
+.bg {
+  position: absolute;
+
+  background-image: url("grass.png");
+
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-container {
+  margin-top: 10%;
+  margin-left: 30%;
+}
