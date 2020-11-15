@@ -3,13 +3,13 @@ function updateTime() {
   var today = new Date();
   var currentDate = today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getFullYear();
   var currentTime = "";
-  if (today.getHours() > 12) {
-    currentTime = formatTime(today.getHours()-12) + ":" +
-    formatTime(today.getMinutes()) + ":" + formatTime(today.getSeconds()) + " PM";
+  if (today.getHours() < 12) {
+    currentTime = formatTime(((today.getHours()+11)%12)+1) + ":" +
+    formatTime(today.getMinutes()) + ":" + formatTime(today.getSeconds()) + " AM";
   }
   else {
-    currentTime = formatTime(today.getHours()) + ":" +
-    formatTime(today.getMinutes()) + ":" + formatTime(today.getSeconds()) + " AM";
+    currentTime = formatTime(((today.getHours()-1)%12)+1) + ":" +
+    formatTime(today.getMinutes()) + ":" + formatTime(today.getSeconds()) + " PM";
   }
 
   var millisecExisted = (today - birthDate);
