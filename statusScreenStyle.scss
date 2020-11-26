@@ -9,7 +9,9 @@ p {
 
 .bg {
   position: absolute;
+
   background-image: url("grass.png");
+
   height: 100%;
   width: 100%;
   background-position: bottom;
@@ -20,8 +22,6 @@ p {
 #main-container {
   width: 60%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255,255,255,0.8);
   padding-left: 5%;
 }
-
-/*# sourceMappingURL=statusScreenStyle.css.map */
