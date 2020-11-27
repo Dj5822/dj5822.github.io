@@ -9,7 +9,7 @@ p {
 
 .bg {
   position: absolute;
-  background-image: url("grass.png");
+  background-image: url("images/grass.png");
   height: 100%;
   width: 100%;
   background-position: bottom;
