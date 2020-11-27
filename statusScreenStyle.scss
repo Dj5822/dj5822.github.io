@@ -27,8 +27,38 @@ h2 {
   object-fit: cover;
 }
 
+#navbar {
+  background-color: DarkBlue;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  text-justify: auto;
+}
+#nav-list {
+  display: flex;
+  margin-right: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list a{
+  display: block;
+  font-size: 4vmin;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: white;
+}
+#nav-list a:hover{
+  background-color: white;
+  color: var(--sub-color);
+}
+ul {
+  list-style: none;
+}
+
 #welcome-section {
-  position: sticky;
   user-select: none;
 
   height: 100vh;
@@ -65,7 +95,6 @@ h2 {
 }
 
 #status-section {
-  position: sticky;
   user-select: none;
 
   height: 100vh;
