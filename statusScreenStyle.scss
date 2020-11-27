@@ -1,16 +1,10 @@
-.sub-heading {
-  font-size: 500%;
-  color: DarkBlue;
-}
-
 p {
   font-size: 300%;
 }
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
+
+.sub-heading {
+  font-size: 500%;
+  color: DarkBlue;
 }
 
 .bg {
@@ -31,32 +25,4 @@ a {
   background-color: rgba(255,255,255,0.8);
   padding-left: 5%;
   padding-top: 5%;
-}
-
-#navbar {
-  background-color: rgba(0,0,128,0.9);
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  text-justify: auto;
-}
-#nav-list {
-  display: flex;
-  margin-right: 2rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-#nav-list a{
-  display: block;
-  font-size: 4vmin;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  color: white;
-}
-#nav-list a:hover{
-  background-color: white;
-  color: rgba(0,0,128,0.9);
 }
