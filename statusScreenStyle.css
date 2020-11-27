@@ -1,28 +1,59 @@
+body {
+  overflow-x: hidden;
+}
+
 p {
   font-size: 300%;
 }
 
-.sub-heading {
+h1 {
+  font-size: 1000%;
+}
+
+h2 {
   font-size: 500%;
   color: DarkBlue;
 }
 
-.bg {
-  position: absolute;
-  background-image: url("images/grass.png");
-  height: 100%;
-  width: 100%;
+#welcome-section {
+  position: sticky;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/welcome-background.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 35%;
+  color: white;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 130vh;
+  animation-name: text-fadein;
+  animation-duration: 4s;
 }
 
+@keyframes text-fadein {
+  0% {
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    color: white;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+  }
+}
 #status-section {
-  width: 60%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding-left: 5%;
+  position: sticky;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/grass.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 5%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=statusScreenStyle.css.map */
