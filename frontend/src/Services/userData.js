@@ -8,7 +8,7 @@ const getUserData = () => {
   const playTime = getPlayTime();
   return {
     name: playerName,
-    age: today.getFullYear()-birthDate.getFullYear(),
+    age: Math.round(playTime[0]/365*1000)/1000,
     birthDate: dateToString(birthDate),
     playRecord: {
         days: playTime[0],

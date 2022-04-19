@@ -1,0 +1,9 @@
+$background-color: #40444c;
+$text-color: white;
+$main-color: #282c34;
+$sub-color: white;
+
+:export {
+    backgroundColor: $background-color;
+    textColor: $text-color;
+}

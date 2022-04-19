@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
-import './StatusPanel.scss';
-import background from '../../Images/grass.png';
+import styles from './StatusPanel.module.scss';
 import getUserData from '../../Services/userData'
 import { Typography } from '@mui/material';
+import colors from '../../Styles/_color.scss'
 
 const StatusPanel = () => {
     const [userData, setUserData] = useState({
@@ -26,20 +26,34 @@ const StatusPanel = () => {
     }, [])
 
     return (
-        <div className="StatusPanel">
-            <Card>
+        <div className={styles.StatusPanel}>
+            <Card className={styles.StatusCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
                 <Typography variant='h3'>Status</Typography>
                 <Typography><b>Name: </b>{userData.name}</Typography>
                 <Typography><b>Age: </b>{userData.age}</Typography>
                 <Typography><b>Birth date: </b>{userData.birthDate}</Typography>
             </Card>
 
-            <Card>
+            <Card className={styles.PlayRecordCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
                 <Typography variant='h3'>Play Record</Typography>
-                <Typography><b>Days: </b>{userData.playRecord.days}</Typography>
-                <Typography><b>Hours: </b>{userData.playRecord.hours}</Typography>
-                <Typography><b>Minutes: </b>{userData.playRecord.minutes}</Typography>
-                <Typography><b>Seconds: </b>{userData.playRecord.seconds}</Typography>
+                <div className={styles.PlayRecordLayout}>
+                    <Card className={styles.PlayRecordCounter}>
+                        <Typography variant='h2'>{userData.playRecord.days}</Typography>
+                        <Typography>Days</Typography>
+                    </Card>
+                    <Card className={styles.PlayRecordCounter}>
+                        <Typography variant='h2'>{userData.playRecord.hours}</Typography>
+                        <Typography>Hours</Typography>
+                    </Card>
+                    <Card className={styles.PlayRecordCounter}>
+                        <Typography variant='h2'>{userData.playRecord.minutes}</Typography>
+                        <Typography>Minutes</Typography>
+                    </Card>
+                    <Card className={styles.PlayRecordCounter}>
+                        <Typography variant='h2'>{userData.playRecord.seconds}</Typography>
+                        <Typography>Seconds</Typography>
+                    </Card>
+                </div>
             </Card>
         </div>
     );

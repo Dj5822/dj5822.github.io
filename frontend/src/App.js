@@ -1,10 +1,18 @@
+import { ThemeProvider, createTheme } from '@mui/material';
 import Homepage from './Pages/Homepage/Homepage';
+
+
+const theme = createTheme({
+  palette: {
+    
+  }
+});
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
       <Homepage />
-    </div>
+    </ThemeProvider>
   );
 }
 
