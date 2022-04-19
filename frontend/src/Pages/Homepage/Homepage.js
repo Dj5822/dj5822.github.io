@@ -9,7 +9,7 @@ const Homepage = () => {
     return (
         <div>
             <Navbar />
-            <StatusPanel />
+            <ProjectsPanel />
         </div>
     )
 }

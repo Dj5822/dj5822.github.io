@@ -1,0 +1,42 @@
+@use "../../Styles/color" as colors;
+
+.projectsSection {
+  background-color: rgb(220, 220, 240);
+  height: 100vh;
+  color: colors.$background-color;
+  padding: 0 2vw 2vh 2vw;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectLink{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.projectLink:hover{
+  color: rgb(220, 220, 240);
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.projectTile {
+  text-align: center;
+  background-color: colors.$background-color;
+  height: 47vmin;
+  width: 40vmin;
+}
+
+.projectImage {
+  height: 40vmin;
+  width: 40vmin;
+  object-fit: cover;
+}
