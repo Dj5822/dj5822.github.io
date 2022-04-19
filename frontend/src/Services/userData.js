@@ -1,18 +1,22 @@
 // global variables
-const name = "Dylan Jung";
+const playerName = "Dylan Jung";
 const birthDate = new Date('June 17, 2000 00:00:00');
 var today = new Date();
 
-// calculate current time.
-function updateTime() {
-  // Update values.
+const getUserData = () => {
   today = new Date();
-  $("#age").html(today.getFullYear()-birthDate.getFullYear());
-  $("#current-date").html(dateToString(today));
-  $("#current-time").html(getCurrentTime());
-  $("#play-time").html(getPlayTime());
-
-  setTimeout(updateTime, 500);
+  const playTime = getPlayTime();
+  return {
+    name: playerName,
+    age: today.getFullYear()-birthDate.getFullYear(),
+    birthDate: dateToString(birthDate),
+    playRecord: {
+        days: playTime[0],
+        hours: playTime[1],
+        minutes: playTime[2],
+        seconds: playTime[3],
+    }
+  }
 }
 
 /*
@@ -46,8 +50,7 @@ function getPlayTime(){
   var hoursExisted = Math.floor(millisecExisted/1000/60/60)%24;
   var minsExisted = Math.floor(millisecExisted/1000/60)%60;
   var secsExisted = Math.floor(millisecExisted/1000)%60;
-  return daysExisted + " days " + hoursExisted + " hours " +
-  minsExisted + " mins " + secsExisted + " secs";
+  return [daysExisted, hoursExisted, minsExisted, secsExisted];
 }
 
 /* Adds zeros to the front of time values such that there
@@ -60,8 +63,4 @@ function formatTime(value){
   return value;
 }
 
-// These values do not change.
-$("#name").html(name);
-$("#birth-date").html(dateToString(birthDate));
-// Update values that do change.
-updateTime();
+export default getUserData;

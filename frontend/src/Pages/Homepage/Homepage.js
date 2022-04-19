@@ -8,9 +8,7 @@ import './Homepage.scss';
 const Homepage = () => {
     return (
         <div>
-            <Navbar />
             <StatusPanel />
-            <ProjectsPanel />
         </div>
     )
 }
