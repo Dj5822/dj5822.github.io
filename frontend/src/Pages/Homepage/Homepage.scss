@@ -21,7 +21,6 @@ h2 {
   height: 47vmin;
   width: 40vmin;
 }
-
 .project-image {
   height: 40vmin;
   width: 40vmin;
@@ -39,95 +38,103 @@ h2 {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   text-justify: auto;
 }
-
 #nav-list {
   display: flex;
   margin-right: 2rem;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-#nav-list a {
+#nav-list a{
   display: block;
   font-size: 4vmin;
   padding: 1rem 1.5rem 1rem 1.5rem;
   color: white;
 }
-
-#nav-list a:hover {
+#nav-list a:hover{
   background-color: white;
   color: var(--sub-color);
 }
-
 ul {
   list-style: none;
 }
 
 #welcome-section {
   user-select: none;
+
   height: 100vh;
   width: 100vw;
-  background-image: url("images/welcome-background.png");
+
+  //background
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+
+  // padding
   padding-top: 35%;
-  color: white;
+
+  // text settings
+  color: rgba(255,255,255,1);
   text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
   text-align: center;
   line-height: 130vh;
+
+  // text animation
   animation-name: text-fadein;
   animation-duration: 4s;
 }
-
 @keyframes text-fadein {
   0% {
-    color: rgba(255, 255, 255, 0);
+    color: rgba(255,255,255,0);
     text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
   }
   100% {
-    color: white;
+    color: rgba(255,255,255,1);
     text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
   }
 }
+
 #status-section {
   user-select: none;
+
   height: 100vh;
   width: 100vw;
-  background-image: url("images/grass.png");
+
+  //background
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+
+  // padding
   padding-top: 5%;
+
+  // text settings
   text-align: center;
 }
 
 #projects-section {
-  background-color: #dcdcf0;
+  background-color: rgb(220, 220, 240);
   height: 120vh;
   width: 100vw;
   font-size: 3.5vmin;
   color: DarkBlue;
   padding: 0 2vw 2vh 2vw;
   text-align: center;
+
+  // layout
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 10vh auto auto;
 }
-
-#projects-section a {
-  color: white;
+#projects-section a{
+  color: rgb(255, 255, 255);
 }
-
-#projects-section a:hover {
-  color: #dcdcf0;
+#projects-section a:hover{
+  color: rgb(220, 220, 240);
 }
-
 #projects-header {
   font-size: 12vh;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+
   grid-column-start: 1;
   grid-column-end: 5;
 }
-
-/*# sourceMappingURL=statusScreenStyle.css.map */
