@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 
 const WelcomePanel = () => {
     return (
-        <div className={styles.WelcomePanel} style={{backgroundImage: `url(${welcomeImage})`}}>
+        <div id="welcome-section" className={styles.WelcomePanel} style={{backgroundImage: `url(${welcomeImage})`}}>
             <h1 className={styles.Title}>Welcome</h1>
         </div>
     );

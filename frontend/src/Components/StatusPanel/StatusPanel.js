@@ -29,7 +29,7 @@ const StatusPanel = () => {
     }, [])
 
     return (
-        <div className={styles.StatusPanel} style={{backgroundImage: `url(${background})`}}>
+        <div id="status-section" className={styles.StatusPanel} style={{backgroundImage: `url(${background})`}}>
             <Card className={styles.StatusCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
                 <Typography variant='h4'>{userData.name}</Typography>
                 <List>

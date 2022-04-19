@@ -8,7 +8,7 @@ import surveyImage from '../../Images/AnimeSurvey.PNG';
 
 const ProjectsPanel = () => {
     return (
-        <div className={styles.projectsSection}>
+        <div id="projects-section" className={styles.projectsSection}>
             <Typography variant='h1'>Projects</Typography>
 
             <div className={styles.projectsContainer}>
