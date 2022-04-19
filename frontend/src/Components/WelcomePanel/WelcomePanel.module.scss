@@ -1,0 +1,31 @@
+.WelcomePanel {
+  user-select: none;
+
+  height: 100vh;
+  width: 100vw;
+
+  // text settings
+  color: rgba(255,255,255,1);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 130vh;
+
+  // text animation
+  animation-name: text-fadein;
+  animation-duration: 4s;
+}
+@keyframes text-fadein {
+  0% {
+    color: rgba(255,255,255,0);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    color: rgba(255,255,255,1);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.Title {
+  font-size: 120px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}

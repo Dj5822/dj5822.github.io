@@ -9,6 +9,8 @@ const Homepage = () => {
     return (
         <div>
             <Navbar />
+            <WelcomePanel />
+            <StatusPanel />
             <ProjectsPanel />
         </div>
     )

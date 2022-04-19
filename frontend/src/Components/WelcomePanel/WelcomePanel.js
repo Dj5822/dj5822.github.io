@@ -1,12 +1,12 @@
 import React from 'react';
-import './WelcomePanel.scss';
+import styles from './WelcomePanel.module.scss';
 import welcomeImage from "../../Images/welcome-background.png";
+import { Typography } from '@mui/material';
 
 const WelcomePanel = () => {
     return (
-        <div className="WelcomePanel">
-            <img src={welcomeImage} alt="Aquarium background"/>
-            <h1>Welcome</h1>
+        <div className={styles.WelcomePanel} style={{backgroundImage: `url(${welcomeImage})`}}>
+            <h1 className={styles.Title}>Welcome</h1>
         </div>
     );
 }
