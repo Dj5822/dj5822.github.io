@@ -1,6 +1,9 @@
 // global variables
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const playerName = "Dylan Jung";
+const gender = "Male";
 const birthDate = new Date('June 17, 2000 00:00:00');
+const height = "170 cm";
 var today = new Date();
 
 const getUserData = () => {
@@ -8,8 +11,10 @@ const getUserData = () => {
   const playTime = getPlayTime();
   return {
     name: playerName,
-    age: Math.round(playTime[0]/365*1000)/1000,
-    birthDate: dateToString(birthDate),
+    gender,
+    age: Math.floor(playTime[0]/365),
+    birthday: dateToString(birthDate),
+    height,
     playRecord: {
         days: playTime[0],
         hours: playTime[1],
@@ -23,8 +28,8 @@ const getUserData = () => {
 Returns the current date.
 */
 function dateToString(date) {
-  return formatTime(date.getDate()) + "/" + formatTime(date.getMonth()+1) +
-  "/" + date.getFullYear();
+  return formatTime(date.getDate()) + " " + (months[date.getMonth()]) +
+  " " + date.getFullYear();
 }
 
 /*

@@ -1,4 +1,4 @@
-#StatusPanel {
+.StatusPanel {
     user-select: none;
   
     height: 100vh;
@@ -8,9 +8,11 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-  
-    // text settings
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .StatusCard {
@@ -22,6 +24,17 @@
     padding: 16px;
 }
 
+.StatusListItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.StatusLabel {
+    width: 80px;
+    padding-left: 8px;
+    margin-right: 80px;
+}
 
 .PlayRecordCard {
     display: flex;

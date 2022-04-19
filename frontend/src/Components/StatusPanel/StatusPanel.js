@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import styles from './StatusPanel.module.scss';
 import getUserData from '../../Services/userData'
-import { Typography } from '@mui/material';
-import colors from '../../Styles/_color.scss'
+import { Typography, Divider, List, ListItem } from '@mui/material';
+import colors from '../../Styles/_color.scss';
+import background from '../../Images/grass.png';
 
 const StatusPanel = () => {
     const [userData, setUserData] = useState({
         name: "?",
+        gender: "?",
         age: "?",
-        birthDate: "?",
+        birthday: "?",
+        height: "?",
         playRecord: {
             days: 0,
             hours: 0,
@@ -26,12 +29,38 @@ const StatusPanel = () => {
     }, [])
 
     return (
-        <div className={styles.StatusPanel}>
+        <div className={styles.StatusPanel} style={{backgroundImage: `url(${background})`}}>
             <Card className={styles.StatusCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
-                <Typography variant='h3'>Status</Typography>
-                <Typography><b>Name: </b>{userData.name}</Typography>
-                <Typography><b>Age: </b>{userData.age}</Typography>
-                <Typography><b>Birth date: </b>{userData.birthDate}</Typography>
+                <Typography variant='h4'>{userData.name}</Typography>
+                <List>
+                    <ListItem className={styles.StatusListItem}>
+                        <Card className={styles.StatusLabel}>
+                            <Typography>Gender </Typography>
+                        </Card>
+                        <Typography>{userData.gender}</Typography>
+                    </ListItem>
+                    <Divider />
+                    <ListItem className={styles.StatusListItem}>
+                        <Card className={styles.StatusLabel}>
+                            <Typography>Age </Typography>
+                        </Card>
+                        <Typography>{userData.age}</Typography>  
+                    </ListItem>
+                    <Divider />
+                    <ListItem className={styles.StatusListItem}>
+                        <Card className={styles.StatusLabel}>
+                            <Typography>Birthday</Typography>
+                        </Card>
+                        <Typography>{userData.birthday}</Typography>
+                    </ListItem>
+                    <Divider />
+                    <ListItem className={styles.StatusListItem}>
+                        <Card className={styles.StatusLabel}>
+                            <Typography>Height </Typography>
+                        </Card>
+                        <Typography>{userData.height}</Typography>
+                    </ListItem>
+                </List>
             </Card>
 
             <Card className={styles.PlayRecordCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
