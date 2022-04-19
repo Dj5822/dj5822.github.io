@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styles from './StatusPanel.module.scss';
-import getUserData from '../../Services/userData'
-import background from '../../Images/grass.png';
+import getUserData from '../../Services/userData';
 import StatusCard from '../StatusCard/StatusCard';
 import PlayRecord from '../PlayRecord/PlayRecord';
+import grassBackground from '../../Images/grass.png';
 
 const StatusPanel = () => {
     const [userData, setUserData] = useState({
@@ -28,7 +28,7 @@ const StatusPanel = () => {
     }, [])
 
     return (
-        <div id="status-section" className={styles.StatusPanel} style={{backgroundImage: `url(${background})`}}>
+        <div id="status-section" className={styles.StatusPanel} style={{backgroundImage: `url(${grassBackground})`}}>
             <StatusCard name={userData.name} gender={userData.gender} age={userData.age} birthday={userData.birthday} height={userData.height} />
             <PlayRecord days={userData.playRecord.days} hours={userData.playRecord.hours} minutes={userData.playRecord.minutes} seconds={userData.playRecord.seconds} />
         </div>

@@ -4,15 +4,14 @@ import Navbar from '../../Components/Navbar/Navbar';
 import ProjectsPanel from '../../Components/ProjectsPanel/ProjectsPanel';
 import StatusPanel from '../../Components/StatusPanel/StatusPanel';
 import WelcomePanel from '../../Components/WelcomePanel/WelcomePanel';
-import './Homepage.scss';
-import welcomeImage from "../../Images/welcome-background.png";
+import styles from './Homepage.module.scss';
 
 const Homepage = () => {
     return (
-        <div>
+        <div className={styles.backgroundImage} >
             <Navbar />
-            <Parallax pages={3}>
-                <ParallaxLayer offset={0} style={{backgroundImage: `url(${welcomeImage})`}}>
+            <Parallax pages={3} style={{ top: '0', left: '0' }}>
+                <ParallaxLayer offset={0} >
                     <WelcomePanel />
                 </ParallaxLayer>
                 <ParallaxLayer offset={1}>

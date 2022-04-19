@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './WelcomePanel.module.scss';
 import welcomeImage from "../../Images/welcome-background.png";
-import { Typography } from '@mui/material';
 
 const WelcomePanel = () => {
     return (
