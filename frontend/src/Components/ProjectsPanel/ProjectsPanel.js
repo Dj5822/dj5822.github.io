@@ -19,7 +19,7 @@ const ProjectsPanel = () => {
                     </a>
                 </Card>
                 <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
-                    <a className={styles.projectLink} href="Projects/MakiseKirisu/MakiseKirisu.html" target="_blank">
+                    <a className={styles.projectLink} href="./makise-kirisu" target="_blank">
                         <img className={styles.projectImage} src={kirisuImage} alt="Makise Kirisu Page" />
                         <Typography variant='h4'>MakiseKirisu</Typography>
                     </a>
