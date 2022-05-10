@@ -4,8 +4,6 @@ import MakiseKirisuPage from './Pages/MakiseKirisuPage/MakiseKirisuPage';
 import {Routes, Route, Link} from "react-router-dom";
 import ArknightsPage from './Pages/ArknightInfoPage/ArknightsPage';
 
-
-
 const theme = createTheme({
   palette: {
     

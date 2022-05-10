@@ -11,16 +11,16 @@ const Homepage = () => {
     return (
         <div className={styles.backgroundImage} style={{backgroundImage: `url(${grassBackground})`}} >
             <Navbar />
-            <Parallax pages={4}>
-                <ParallaxLayer offset={0} speed={1}>
+            <Parallax pages={3}>
+                <ParallaxLayer offset={0} >
                     <WelcomePanel />
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1} speed={1}>
+                <ParallaxLayer offset={1} >
                     <StatusPanel />
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2} speed={1}>
+                <ParallaxLayer offset={2} >
                     <ProjectsPanel />
                 </ParallaxLayer>
             </Parallax>
