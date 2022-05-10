@@ -13,7 +13,7 @@ const ProjectsPanel = () => {
 
             <div className={styles.projectsContainer}>
                 <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
-                    <a className={styles.projectLink} href="Projects/ArknightsInfo/arknightsInfo.html" target="_blank">
+                    <a className={styles.projectLink} href="./arknights" target="_blank">
                         <img className={styles.projectImage} src={arknightsImage} alt="Arknights Page" />
                         <Typography variant='h4'>ArknightsInfo</Typography>
                     </a>

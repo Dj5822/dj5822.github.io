@@ -2,6 +2,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import Homepage from './Pages/Homepage/Homepage';
 import MakiseKirisuPage from './Pages/MakiseKirisuPage/MakiseKirisuPage';
 import {Routes, Route, Link} from "react-router-dom";
+import ArknightsPage from './Pages/ArknightInfoPage/ArknightsPage';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/makise-kirisu" element={<MakiseKirisuPage />} />
+        <Route path="/arknights" element={<ArknightsPage />} />
       </Routes>
     </ThemeProvider>
   );

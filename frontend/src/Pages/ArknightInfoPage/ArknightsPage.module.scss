@@ -1,0 +1,70 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.logo {
+    width:80px;
+    height:80px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.logo:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arknightsPage {
+    margin-top: 80px;
+    padding: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+    width: 96vw;
+    height: 80vh;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/*
+#header-img{
+    width: 20%;
+    height: 20%;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+}
+#email {
+    font-size: 5vmin;
+    margin: 0 20px 0 20px;
+}
+label {
+    font-size: 5vmin;
+}
+#submit {
+    font-size: 5vmin;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3vmin;
+}
+.factionImage{
+    max-width:55vmin;
+    max-height:55vmin;
+}
+*/
