@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a39ccba.css",
+    "main.js": "/static/js/main.4ec035ee.js",
+    "static/js/787.72769b58.chunk.js": "/static/js/787.72769b58.chunk.js",
+    "static/media/welcome-background.png": "/static/media/welcome-background.c63652fc78e3ee24e622.png",
+    "static/media/ArknightsInfo.PNG": "/static/media/ArknightsInfo.a65376b5b3ef980d48e0.PNG",
+    "static/media/AnimeSurvey.PNG": "/static/media/AnimeSurvey.8802d4a8445e7d0c93fa.PNG",
+    "static/media/MakiseKirisu.PNG": "/static/media/MakiseKirisu.184ae6c6537f1b07980d.PNG",
+    "static/media/grass.png": "/static/media/grass.ae39a5c4dc27413c8a13.png",
+    "static/media/logo_lungmen.png": "/static/media/logo_lungmen.efeff6180c2241960489.png",
+    "static/media/kirisu.jpg": "/static/media/kirisu.cb1318be99c172e4a3d7.jpg",
+    "static/media/logo_penguin.png": "/static/media/logo_penguin.d4b2731efee3c6130f30.png",
+    "static/media/TechnicalDoc.PNG": "/static/media/TechnicalDoc.604dee8f5feb44922336.PNG",
+    "static/media/logo_rhine.png": "/static/media/logo_rhine.5fd3e98bf23cbe2ff373.png",
+    "static/media/logo_rhodes.png": "/static/media/logo_rhodes.7ea9c60346f6839a5518.png",
+    "index.html": "/index.html",
+    "main.5a39ccba.css.map": "/static/css/main.5a39ccba.css.map",
+    "main.4ec035ee.js.map": "/static/js/main.4ec035ee.js.map",
+    "787.72769b58.chunk.js.map": "/static/js/787.72769b58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a39ccba.css",
+    "static/js/main.4ec035ee.js"
+  ]
+}
