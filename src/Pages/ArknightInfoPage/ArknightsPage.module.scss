@@ -35,36 +35,34 @@
     padding-right: 16px;
 }
 
-/*
-#header-img{
-    width: 20%;
-    height: 20%;
-}
-
-#form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 40px 0 20px 0;
-}
-#email {
-    font-size: 5vmin;
-    margin: 0 20px 0 20px;
-}
-label {
-    font-size: 5vmin;
-}
-#submit {
-    font-size: 5vmin;
-}
 .info {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 3vmin;
 }
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+}
+
+.email {
+    font-size: 5vmin;
+    margin: 0 20px 0 20px;
+}
+
 .factionImage{
     max-width:55vmin;
     max-height:55vmin;
 }
-*/
+
+label {
+    font-size: 5vmin;
+}
+
+.submit {
+    font-size: 5vmin;
+}
