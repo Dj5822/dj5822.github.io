@@ -25,13 +25,13 @@ const ProjectsPanel = () => {
                     </a>
                 </Card>
                 <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
-                    <a className={styles.projectLink} href="Projects/TechnicalDoc/technicalDoc.html" target="_blank">
+                    <a className={styles.projectLink} href="./techdocs" target="_blank">
                         <img className={styles.projectImage} src={techDocImage} alt="Techdocs Page" />
                         <Typography variant='h4'>TechnicalDoc</Typography>
                     </a>
                 </Card>
                 <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
-                    <a className={styles.projectLink} href="Projects/AnimeSurvey/AnimeSurvey.html" target="_blank">
+                    <a className={styles.projectLink} href="./animesurvey" target="_blank">
                         <img className={styles.projectImage} src={surveyImage} alt="Anime survey Page" />
                         <Typography variant='h4'>AnimeSurvey</Typography>
                     </a>
