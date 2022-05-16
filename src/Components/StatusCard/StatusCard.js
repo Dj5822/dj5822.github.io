@@ -1,6 +1,6 @@
 import { Typography, Card, Divider, List, ListItem } from '@mui/material';
 import styles from './StatusCard.module.scss';
-import colors from '../../Styles/_color.scss';
+import colors from '../../Styles/_color.module.scss';
 
 const StatusCard = (props) => {
     return (

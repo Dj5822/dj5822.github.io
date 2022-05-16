@@ -1,6 +1,6 @@
 import { Card, Typography } from '@mui/material';
 import styles from './ProjectsPanel.module.scss';
-import colors from '../../Styles/_color.scss';
+import colors from '../../Styles/_color.module.scss';
 import arknightsImage from '../../Images/ArknightsInfo.PNG';
 import kirisuImage from '../../Images/MakiseKirisu.PNG';
 import techDocImage from '../../Images/TechnicalDoc.PNG';

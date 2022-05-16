@@ -1,5 +1,5 @@
 import { Typography, Card } from '@mui/material';
-import colors from '../../Styles/_color.scss';
+import colors from '../../Styles/_color.module.scss';
 import styles from './PlayRecord.module.scss';
 
 const PlayRecord = (props) => {

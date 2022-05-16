@@ -4,7 +4,7 @@ import logoPenguin from "./images/logo_penguin.png"
 import logoRhine from "./images/logo_rhine.png"
 import logoLungmen from "./images/logo_lungmen.png"
 import { AppBar, Box, Typography } from "@mui/material";
-import colors from '../../Styles/_color.scss';
+import colors from '../../Styles/_color.module.scss';
 
 const ArknightsPage = () => {
     return (
