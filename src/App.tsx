@@ -10,7 +10,7 @@ import colors from "./Styles/_color.module.scss";
 const theme = createTheme({
   palette: {
     primary: {
-      main: colors.mainColor
+      main: colors.primaryColor
     },
   },
 });
