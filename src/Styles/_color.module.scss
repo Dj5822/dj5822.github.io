@@ -1,15 +1,14 @@
 $background-color: #40444c;
-$text-color: rgb(255, 255, 255);
-$text-selection-color: rgba(255, 255, 255, 0.7);
+$dark-color: #192a78;
 $primary-color: rgb(80, 80, 168);
 $light-color: #827eda;
-$dark-color: #192a78;
 $sub-color: rgb(220, 238, 240);
+$text-color: rgb(255, 255, 255);
 
 :export {
     backgroundColor: $background-color;
     textColor: $text-color;
-    mainColor: $primary-color;
+    primaryColor: $primary-color;
     darkColor: $dark-color;
     lightColor: $light-color;
 }

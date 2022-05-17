@@ -12,7 +12,7 @@ interface User {
 
 const StatusCard = (props: User) => {
     return (
-        <Card className={styles.StatusCard} sx={{backgroundColor: colors.mainColor, color: colors.textColor}}>
+        <Card className={styles.StatusCard} sx={{backgroundColor: colors.primaryColor, color: colors.textColor}}>
             <Typography variant='h4'>{props.name}</Typography>
             <List>
                 <ListItem className={styles.StatusListItem}>

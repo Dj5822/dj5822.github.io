@@ -11,7 +11,7 @@ interface Time {
 
 const PlayRecord = (props:Time) => {
     return (
-        <Card className={styles.PlayRecordCard} sx={{backgroundColor: colors.mainColor, color: colors.textColor}}>
+        <Card className={styles.PlayRecordCard} sx={{backgroundColor: colors.primaryColor, color: colors.textColor}}>
             <Typography variant='h3'>Play Record</Typography>
             <div className={styles.PlayRecordLayout}>
                 <Card className={styles.PlayRecordCounter} sx={{backgroundColor: colors.lightColor, color: colors.textColor}}>

@@ -12,25 +12,25 @@ const ProjectsPanel = () => {
             <Typography variant='h1'>Projects</Typography>
 
             <div className={styles.projectsContainer}>
-                <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
+                <Card className={styles.projectTile} sx={{backgroundColor: colors.primaryColor, color: colors.textColor}}>
                     <a className={styles.projectLink} href="./arknights" target="_blank">
                         <img className={styles.projectImage} src={arknightsImage} alt="Arknights Page" />
                         <Typography variant='h4'>ArknightsInfo</Typography>
                     </a>
                 </Card>
-                <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
+                <Card className={styles.projectTile} sx={{backgroundColor: colors.primaryColor, color: colors.textColor}}>
                     <a className={styles.projectLink} href="./makise-kirisu" target="_blank">
                         <img className={styles.projectImage} src={kirisuImage} alt="Makise Kirisu Page" />
                         <Typography variant='h4'>MakiseKirisu</Typography>
                     </a>
                 </Card>
-                <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
+                <Card className={styles.projectTile} sx={{backgroundColor: colors.primaryColor, color: colors.textColor}}>
                     <a className={styles.projectLink} href="./techdocs" target="_blank">
                         <img className={styles.projectImage} src={techDocImage} alt="Techdocs Page" />
                         <Typography variant='h4'>TechnicalDoc</Typography>
                     </a>
                 </Card>
-                <Card className={styles.projectTile} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
+                <Card className={styles.projectTile} sx={{backgroundColor: colors.primaryColor, color: colors.textColor}}>
                     <a className={styles.projectLink} href="./animesurvey" target="_blank">
                         <img className={styles.projectImage} src={surveyImage} alt="Anime survey Page" />
                         <Typography variant='h4'>AnimeSurvey</Typography>
