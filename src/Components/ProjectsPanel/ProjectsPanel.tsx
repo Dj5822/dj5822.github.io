@@ -1,10 +1,10 @@
 import { Card, Typography } from '@mui/material';
 import styles from './ProjectsPanel.module.scss';
 import colors from '../../Styles/_color.module.scss';
-import arknightsImage from '../../Images/ArknightsInfo.PNG';
-import kirisuImage from '../../Images/MakiseKirisu.PNG';
-import techDocImage from '../../Images/TechnicalDoc.PNG';
-import surveyImage from '../../Images/AnimeSurvey.PNG';
+import arknightsImage from '../../Images/ArknightsInfo.png';
+import kirisuImage from '../../Images/MakiseKirisu.png';
+import techDocImage from '../../Images/TechnicalDoc.png';
+import surveyImage from '../../Images/AnimeSurvey.png';
 
 const ProjectsPanel = () => {
     return (

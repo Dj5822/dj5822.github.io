@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from '@mui/material';
 import Homepage from './Pages/Homepage/Homepage';
 import MakiseKirisuPage from './Pages/MakiseKirisuPage/MakiseKirisuPage';
-import {Routes, Route, Link} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import ArknightsPage from './Pages/ArknightInfoPage/ArknightsPage';
 import TechnicalDocPage from './Pages/TechnicalDocPage/TechnicalDocPage';
 import AnimeSurveyPage from './Pages/AnimeSurveyPage/AnimeSurveyPage';
