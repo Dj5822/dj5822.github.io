@@ -27,7 +27,7 @@ const ArknightsPage = () => {
                 frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen />
             <form className={styles.form} action="https://www.freecodecamp.com/email-submit">
-            <label htmlFor="email">Email: </label><input className={styles.email} type="email" name="email" placeholder="Enter your email address"></input>
+            <label className={styles.label} htmlFor="email">Email: </label><input className={styles.email} type="email" name="email" placeholder="Enter your email address"></input>
             <input className={styles.submit} type="submit" value="Submit"></input>
             </form>
             <div id="rhodesIslandInfo" className={styles.info}>
