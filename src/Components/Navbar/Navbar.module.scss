@@ -18,6 +18,7 @@
 }
 
 .navList a:hover{
+  color: colors.$sub-color;
   border-bottom: 5px solid colors.$sub-color;
 }
 
