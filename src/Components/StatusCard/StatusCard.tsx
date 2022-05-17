@@ -2,7 +2,15 @@ import { Typography, Card, Divider, List, ListItem } from '@mui/material';
 import styles from './StatusCard.module.scss';
 import colors from '../../Styles/_color.module.scss';
 
-const StatusCard = (props) => {
+interface User {
+    name: string,
+    gender: string,
+    age: number,
+    birthday: string,
+    height: number
+}
+
+const StatusCard = (props: User) => {
     return (
         <Card className={styles.StatusCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
             <Typography variant='h4'>{props.name}</Typography>
@@ -32,7 +40,7 @@ const StatusCard = (props) => {
                     <Card className={styles.StatusLabel}>
                         <Typography>Height </Typography>
                     </Card>
-                    <Typography>{props.height}</Typography>
+                    <Typography>{props.height} cm</Typography>
                 </ListItem>
             </List>
         </Card>

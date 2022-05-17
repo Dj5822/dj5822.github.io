@@ -2,7 +2,14 @@ import { Typography, Card } from '@mui/material';
 import colors from '../../Styles/_color.module.scss';
 import styles from './PlayRecord.module.scss';
 
-const PlayRecord = (props) => {
+interface Time {
+    days: number,
+    hours: number,
+    minutes: number,
+    seconds: number,
+}
+
+const PlayRecord = (props:Time) => {
     return (
         <Card className={styles.PlayRecordCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
             <Typography variant='h3'>Play Record</Typography>

@@ -8,9 +8,9 @@ const StatusPanel = () => {
     const [userData, setUserData] = useState({
         name: "?",
         gender: "?",
-        age: "?",
+        age: 0,
         birthday: "?",
-        height: "?",
+        height: 0,
         playRecord: {
             days: 0,
             hours: 0,

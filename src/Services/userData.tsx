@@ -3,12 +3,12 @@ const months: Array<string> = ["January", "February", "March", "April", "May", "
 const playerName: string = "Dylan Jung";
 const gender: string = "Male";
 const birthDate: Date = new Date('June 17, 2000 00:00:00');
-const height: Number = 170;
+const height: number = 170;
 var today: Date = new Date();
 
 const getUserData = () => {
   today = new Date();
-  const playTime: Array<Number> = getPlayTime();
+  const playTime: Array<number> = getPlayTime();
   return {
     name: playerName,
     gender,
@@ -50,18 +50,18 @@ function getCurrentTime(){
 Calculates total play time.
 */
 function getPlayTime(){
-  var millisecExisted = (today.valueOf() - birthDate.valueOf());
-  var daysExisted = Math.floor(millisecExisted/1000/60/60/24);
-  var hoursExisted = Math.floor(millisecExisted/1000/60/60)%24;
-  var minsExisted = Math.floor(millisecExisted/1000/60)%60;
-  var secsExisted = Math.floor(millisecExisted/1000)%60;
+  var millisecExisted: number = (today.valueOf() - birthDate.valueOf());
+  var daysExisted: number = Math.floor(millisecExisted/1000/60/60/24);
+  var hoursExisted: number = Math.floor(millisecExisted/1000/60/60)%24;
+  var minsExisted: number = Math.floor(millisecExisted/1000/60)%60;
+  var secsExisted: number = Math.floor(millisecExisted/1000)%60;
   return [daysExisted, hoursExisted, minsExisted, secsExisted];
 }
 
 /* Adds zeros to the front of time values such that there
 are two digits in the time value.
 */
-function formatTime(value: Number){
+function formatTime(value: number){
   if (value<10){
     value = Number("0" + value);
   }
