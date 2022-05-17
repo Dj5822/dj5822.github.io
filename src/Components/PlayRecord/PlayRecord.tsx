@@ -11,22 +11,22 @@ interface Time {
 
 const PlayRecord = (props:Time) => {
     return (
-        <Card className={styles.PlayRecordCard} sx={{backgroundColor: colors.backgroundColor, color: "#ffffff"}}>
+        <Card className={styles.PlayRecordCard} sx={{backgroundColor: colors.mainColor, color: colors.textColor}}>
             <Typography variant='h3'>Play Record</Typography>
             <div className={styles.PlayRecordLayout}>
-                <Card className={styles.PlayRecordCounter}>
+                <Card className={styles.PlayRecordCounter} sx={{backgroundColor: colors.lightColor, color: colors.textColor}}>
                     <Typography variant='h2'>{props.days}</Typography>
                     <Typography>Days</Typography>
                 </Card>
-                <Card className={styles.PlayRecordCounter}>
+                <Card className={styles.PlayRecordCounter} sx={{backgroundColor: colors.lightColor, color: colors.textColor}}>
                     <Typography variant='h2'>{props.hours}</Typography>
                     <Typography>Hours</Typography>
                 </Card>
-                <Card className={styles.PlayRecordCounter}>
+                <Card className={styles.PlayRecordCounter} sx={{backgroundColor: colors.lightColor, color: colors.textColor}}>
                     <Typography variant='h2'>{props.minutes}</Typography>
                     <Typography>Minutes</Typography>
                 </Card>
-                <Card className={styles.PlayRecordCounter}>
+                <Card className={styles.PlayRecordCounter} sx={{backgroundColor: colors.lightColor, color: colors.textColor}}>
                     <Typography variant='h2'>{props.seconds}</Typography>
                     <Typography>Seconds</Typography>
                 </Card>
