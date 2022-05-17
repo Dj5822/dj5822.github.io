@@ -5,11 +5,14 @@ import {Routes, Route} from "react-router-dom";
 import ArknightsPage from './Pages/ArknightInfoPage/ArknightsPage';
 import TechnicalDocPage from './Pages/TechnicalDocPage/TechnicalDocPage';
 import AnimeSurveyPage from './Pages/AnimeSurveyPage/AnimeSurveyPage';
+import colors from "./Styles/_color.module.scss";
 
 const theme = createTheme({
   palette: {
-    
-  }
+    primary: {
+      main: colors.mainColor
+    },
+  },
 });
 
 function App() {

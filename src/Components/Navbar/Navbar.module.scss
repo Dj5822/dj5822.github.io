@@ -4,19 +4,21 @@
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  justify-content: center;
 }
 
 .navList a{
   display: block;
-  font-size: 4vmin;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 32px;
+  margin: 0 1.5rem;
+  padding: 1.5rem 0;
   color: colors.$text-color;
   text-decoration: none;
+  border-bottom: 5px solid rgba(0,0,0,0);
 }
 
 .navList a:hover{
-  background-color: colors.$text-color;
-  color: colors.$background-color;
+  border-bottom: 5px solid colors.$sub-color;
 }
 
 ul {

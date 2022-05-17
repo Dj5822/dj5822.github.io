@@ -5,21 +5,21 @@ import colors from '../../Styles/_color.module.scss';
 
 const Navbar = () => {
     return (
-        <AppBar sx={{backgroundColor: colors.backgroundColor}}>
+        <AppBar>
             <ul className={styles.navList}>
                 <li>
-                <a href="#welcome-section">Home</a>
+                    <a href="#welcome-section">HOME</a>
                 </li>
                 <li>
-                <a href="#status-section">Status</a>
+                    <a href="#status-section">STATUS</a>
                 </li>
                 <li>
-                <a href="#projects-section">Projects</a>
+                    <a href="#projects-section">PROJECTS</a>
                 </li>
                 <li>
-                <a id="profile-link" href="https://github.com/Dj5822" target="_blank" rel="noreferrer">Profile</a>
+                    <a id="profile-link" href="https://github.com/Dj5822" target="_blank" rel="noreferrer">PROFILE</a>
                 </li>
-            </ul>
+            </ul>   
         </AppBar>
     );
 }
