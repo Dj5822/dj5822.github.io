@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.958fa4ca.css",
-    "main.js": "/static/js/main.7d365bd4.js",
+    "main.css": "/static/css/main.30aa2d6a.css",
+    "main.js": "/static/js/main.3f63a63c.js",
     "static/js/787.72769b58.chunk.js": "/static/js/787.72769b58.chunk.js",
     "static/media/welcome-background.png": "/static/media/welcome-background.c63652fc78e3ee24e622.png",
     "static/media/background.png": "/static/media/background.7cb8c23acae72ff4b580.png",
@@ -16,12 +16,12 @@
     "static/media/logo_rhine.png": "/static/media/logo_rhine.5fd3e98bf23cbe2ff373.png",
     "static/media/logo_rhodes.png": "/static/media/logo_rhodes.7ea9c60346f6839a5518.png",
     "index.html": "/index.html",
-    "main.958fa4ca.css.map": "/static/css/main.958fa4ca.css.map",
-    "main.7d365bd4.js.map": "/static/js/main.7d365bd4.js.map",
+    "main.30aa2d6a.css.map": "/static/css/main.30aa2d6a.css.map",
+    "main.3f63a63c.js.map": "/static/js/main.3f63a63c.js.map",
     "787.72769b58.chunk.js.map": "/static/js/787.72769b58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.958fa4ca.css",
-    "static/js/main.7d365bd4.js"
+    "static/css/main.30aa2d6a.css",
+    "static/js/main.3f63a63c.js"
   ]
 }
