@@ -24,10 +24,10 @@ const ArknightsPage = () => {
             </AppBar>
             <iframe title="Arknight Promotinal Video" 
                 className={styles.video} src="https://www.youtube.com/embed/mdirvwfd9gw" 
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen />
+                frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen />
             <form className={styles.form} action="https://www.freecodecamp.com/email-submit">
-            <label for="email">Email: </label><input className={styles.email} type="email" name="email" placeholder="Enter your email address"></input>
+            <label htmlFor="email">Email: </label><input className={styles.email} type="email" name="email" placeholder="Enter your email address"></input>
             <input className={styles.submit} type="submit" value="Submit"></input>
             </form>
             <div id="rhodesIslandInfo" className={styles.info}>

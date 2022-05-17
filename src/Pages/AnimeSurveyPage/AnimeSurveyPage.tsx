@@ -10,11 +10,11 @@ const AnimeSurveyPage = () => {
                     An anime survey that collects data on user preferences in anime.
                 </p>
                 <form id="survey-form">
-                    <label id="name-label" for="name">Name: </label> <input id="name" type="text" placeholder="Enter your name" required />
+                    <label id="name-label" htmlFor="name">Name: </label> <input id="name" type="text" placeholder="Enter your name" required />
 
-                    <label id="email-label" for="email">Email: </label> <input id="email" type="email" placeholder="Enter your email" required />
+                    <label id="email-label" htmlFor="email">Email: </label> <input id="email" type="email" placeholder="Enter your email" required />
 
-                    <label id="number-label" for="number">What rating would you give for Sword Art Online season 1? 
+                    <label id="number-label" htmlFor="number">What rating would you give for Sword Art Online season 1? 
                     (1=horrible 10=perfect):</label>
                     <input id="number" type="number" min={0} max={10} placeholder="Enter rating out of 10" required />
 
@@ -61,7 +61,7 @@ const AnimeSurveyPage = () => {
 
                     <div>
                         Express your thoughts about anime:
-                        <textarea rows="5"></textarea>
+                        <textarea rows={5}></textarea>
                     </div>
                     
                     <button id="submit">Submit</button>
