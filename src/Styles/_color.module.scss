@@ -1,9 +1,10 @@
-$background-color: #40444c;
+// main page
 $dark-color: #192a78;
 $primary-color: rgb(80, 80, 168);
 $light-color: #827eda;
 $sub-color: rgb(220, 238, 240);
 $text-color: rgb(255, 255, 255);
+$background-color: #40444c;
 
 :export {
     backgroundColor: $background-color;

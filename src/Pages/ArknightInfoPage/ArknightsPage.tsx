@@ -4,12 +4,11 @@ import logoPenguin from "./images/logo_penguin.png"
 import logoRhine from "./images/logo_rhine.png"
 import logoLungmen from "./images/logo_lungmen.png"
 import { AppBar, Box, Typography } from "@mui/material";
-import colors from '../../Styles/_color.module.scss';
 
 const ArknightsPage = () => {
     return (
         <div className={styles.arknightsPage}>
-            <AppBar className={styles.navBar} sx={{backgroundColor: colors.backgroundColor, flexDirection: "row"}}>
+            <AppBar className={styles.navBar} sx={{backgroundColor: styles.navbarColor, flexDirection: "row"}}>
                 <Typography variant="h2">Arknights Info</Typography>
                 <Box>
                     <a className="nav-link" href="#rhodesIslandInfo">

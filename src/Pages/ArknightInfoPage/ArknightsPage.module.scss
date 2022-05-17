@@ -1,3 +1,22 @@
+$navbar-color: rgba(0,0,0,0.8);
+$background-color: #000000;
+$text-color: #ffffff;
+$selection-color: rgba(255, 255, 255, 0.1);
+
+:export {
+    navbarColor: $navbar-color;
+}
+
+.arknightsPage {
+    padding: 96px 16px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: $background-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+}
+
 .navBar {
     display: flex;
     flex-direction: row;
@@ -14,18 +33,7 @@
 }
 
 .logo:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.arknightsPage {
-    margin-top: 80px;
-    padding: 16px;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
+    background-color: $selection-color;
 }
 
 .video {
